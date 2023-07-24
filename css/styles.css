@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kablammo&family=MuseoModerno:wght@200&family=Quicksand:wght@300&display=swap');
+
+/*  Estilos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #E5E5E5;
+    background-size: cover;
+}
+
+
+header {
+    background: #ECEAEA;
+    color: #2B241F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    box-shadow: 0px 0px 10px #6D4E2E;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+}
+
+.nav1 {
+    background: transparent;
+    height: 100px;
+    color: #1B1617;
+}
+
+.nav2 {
+    background: var(--fondo);
+    height: 110px;
+    color: #000;
+}
+
+.contenedor-nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+}
+
+nav .enlaces a {
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+
+nav .enlaces a:hover {
+    border-bottom: 3px solid #988253;
+    transition: 0.6s;
+    color: #6D4E2E;
+}
+
+
+.logo img {
+    width: 350px;
+    align-items: center;
+}
+
+.icono {
+    display: none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+
+.textos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    overflow: hidden;
+    text-align: center;
+}
+
+.textos>h1 {
+    font-size: 80px;
+}
+
+.textos>h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* fin del header */
+
+/* Estilos de portada */
+
+#portada {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.logo-colores {
+    width: 200px;
+}
+
+.logo-name {
+    width: 50%;
+}
+
+
+#portada p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #1D181B;
+}
+
+/* Estilos de contador */
+
+.contenedor{
+    color: #E5E5E5;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.numero{
+    background-color: #2B241F;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.numero p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.numero span p{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+
+/* Boton */
+.registro{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 25px 0;
+}
+.btn {
+    width: 30%;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 20px;
+    color: #ECEAEA;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2B241F;
+    box-shadow: 0 0 20px #6D4E2E;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #75614A;
+}
+
+/* Estilos para el pie de página */
+/*Footer*/
+footer {
+    background: #9b9b9b;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    box-shadow: 0 0 10px 0 #2B241F;
+}
+
+.partFooter {
+    width: 30%;
+    text-align: center;
+
+}
+
+.partFooter h4 {
+    color: #1F1C1D;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #977569;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.partFooter a:hover {
+    color: #F05635;
+}
+
+.partFooter img {
+    width: 50%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 5px;
+    transition: all ease-in-out .3s;
+    flex-direction: row;
+}
+
+.media {
+    display: inline-block;
+    justify-content: center;
+    color: #977569;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 5px;
+    transition: all ease-in-out .3s;
+}
+
+.media img {
+    width: 100%;
+}
+
+.facebook:hover {
+    background-color: #38569e;
+    border-radius: 20%;
+}
+
+.linked:hover {
+    background-color: #000;
+    border-radius: 20%;
+}
+
+.insta:hover {
+    background-color: #93075b;
+    border-radius: 20%;
+}
+.whats:hover{
+    background-color: #1fde82;
+    border-radius: 20%;
+}
+footer p {
+    margin-top: var(--espacios);
+    color: #2B241F;
+}
+
+
+/* Estilos para los divs en pantallas pequeñas */
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .contenedor-nav{
+        width: 600px;
+    }
+    nav .enlaces a {
+        color: #F0EDE3;
+    }
+
+    .nav2 {
+        color: #fff;
+        
+    }
+
+    .logo img{
+        width: 250px;
+    }
+
+    .icono {
+        display: block;
+        cursor: pointer;
+    }
+
+    .enlaces {
+        position: fixed;
+        top: 100px;
+        background: #2B241F;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .enlaces a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+        color: #F0EDE3;
+    }
+
+    nav .enlaces a:hover {
+        border-bottom: 3px solid #988253;
+        transition: 0.6s;
+        color: #988253;
+    }
+
+    #portada{
+        padding: 0 50px 0 50px;
+    }
+
+    #portada p{
+        color: #1B1617;
+    }
+
+    .btn{
+        width: auto;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .partFooter {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    nav .enlaces a {
+        color: #F0EDE3;
+    }
+
+    .nav2 {
+        color: #fff;
+        
+    }
+
+    .logo img{
+        width: 250px;
+    }
+
+    .icono {
+        display: block;
+        cursor: pointer;
+    }
+
+    .enlaces {
+        position: fixed;
+        top: 100px;
+        background: #2B241F;
+        left: 0;
+        height: 100%;
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .enlaces a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+        color: #F0EDE3;
+    }
+
+    nav .enlaces a:hover {
+        border-bottom: 3px solid #988253;
+        transition: 0.6s;
+        color: #988253;
+    }
+
+    #portada{
+        padding: 0 10px 0 10px;
+    }
+
+    .contenedor{
+        width: 80%;
+    }
+
+    .btn{
+        width: auto;
+    }
+
+    .logo img{
+        width: 250px;
+    }
+    
+    .logo-colores{
+        width: 40%;
+    }
+    .logo-name{
+        width: 70%;
+    }
+    /* footer */
+    .partFooter {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        margin-left: 12px;
+    }
+}
